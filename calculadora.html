@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calculadora.css">
+    <script src="/calculadora.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <table class="calculator">
+        <tr>
+            <th colspan="4" class="pantalla" id="result">
+                0
+            </th>
+        </tr>
+        <tr>
+            <th><input type="button" class="boton_azul" value="√" onclick="sqrt()"></th>
+            <th><input type="button" class="boton_amarillo" value="C" onclick="limpiar()"></th>
+            <th><input type="button" class="boton_amarillo" value="←" onclick="borrar()"></th>
+            <th><input type="button" class="boton_azul" value="/" onclick="concat('/')"></th>
+        </tr>
+        <tr>
+            <th><input type="button" class="boton_blanco" value="7" onclick="concat(7)"></th>
+            <th><input type="button" class="boton_blanco" value="8" onclick="concat(8)"></th>
+            <th><input type="button" class="boton_blanco" value="9" onclick="concat(9)"></th>
+            <th><input type="button" class="boton_azul" value="x"></th>
+        </tr>
+        <tr>
+            <th><input type="button" class="boton_blanco" value="4" onclick="concat(4)"></th>
+            <th><input type="button" class="boton_blanco" value="5" onclick="concat(5)"></th>
+            <th><input type="button" class="boton_blanco" value="6" onclick="concat(6)"></th>
+            <th><input type="button" class="boton_azul" value="-" onclick="concat('-')"></th>
+        </tr>
+        <tr>
+            <th><input type="button" class="boton_blanco" value="1" onclick="concat(1)"></th>
+            <th><input type="button" class="boton_blanco" value="2" onclick="concat(2)"></th>
+            <th><input type="button" class="boton_blanco" value="3" onclick="concat(3)"></th>
+            <th><input type="button" class="boton_azul" value="+" onclick="concat('+')"></th>
+        </tr>
+        <tr>
+            <th><input type="button" class="boton_blanco" value="0" onclick="concat(0)"></th>
+            <th><input type="button" class="boton_blanco" value="." onclick="concat('.')"></th>
+            <th><input type="button" class="boton_blanco" value="%"></th>
+            <th><input type="button" class="boton_azul" value="=" onclick="evaluar()"></th>
+        </tr>
+    </table>
+</body>
+</html>
