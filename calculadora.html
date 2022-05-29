@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/calculadora.css">
-    <script src="/calculadora.js"></script>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js"></script>
     <title>Calculadora</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
             <th><input type="button" class="boton_blanco" value="7" onclick="concat(7)"></th>
             <th><input type="button" class="boton_blanco" value="8" onclick="concat(8)"></th>
             <th><input type="button" class="boton_blanco" value="9" onclick="concat(9)"></th>
-            <th><input type="button" class="boton_azul" value="x"></th>
+            <th><input type="button" class="boton_azul" value="x" onclick="concat('x')"></th>
         </tr>
         <tr>
             <th><input type="button" class="boton_blanco" value="4" onclick="concat(4)"></th>
@@ -42,7 +42,7 @@
         <tr>
             <th><input type="button" class="boton_blanco" value="0" onclick="concat(0)"></th>
             <th><input type="button" class="boton_blanco" value="." onclick="concat('.')"></th>
-            <th><input type="button" class="boton_blanco" value="%"></th>
+            <th><input type="button" class="boton_blanco" value="%" onclick="concat('%')"></th>
             <th><input type="button" class="boton_azul" value="=" onclick="evaluar()"></th>
         </tr>
     </table>

@@ -9,12 +9,14 @@ function concat(digito){
     } else if(isNaN(document.getElementById("result").innerHTML.slice(-1)) == false) {
         document.getElementById("result").innerHTML += digito;
     } else {
-        document.getElementById("result").innerHTML.slice(0, -1) += digito;
+        document.getElementById("result").innerHTML = document.getElementById("result").innerHTML.slice(0, -1)
+        document.getElementById("result").innerHTML += digito;
     }
 }
 
 function evaluar(){
-    document.getElementById("result").innerHTML = eval(document.getElementById("result").innerHTML).toFixed(5);
+    document.getElementById("result").innerHTML = document.getElementById("result").innerHTML.replace(/x/g, "*");
+    document.getElementById("result").innerHTML = eval(document.getElementById("result").innerHTML);
 }
 
 function sqrt(){
